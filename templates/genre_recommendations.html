@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Genre Recommendations</title>
+</head>
+<body>
+    <h1 class="title">Genre Movie Recommendations</h1>
+    <div class="movie-container">
+        {% for movie in movies %}
+        <div class="movie">
+            <h3>{{ movie[0] }}</h3>
+            <img src="{{ movie[1] }}" alt="Movie Poster">
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

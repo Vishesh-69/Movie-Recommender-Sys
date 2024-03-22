@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+.glassmorphism-container {
+    background: url('Versace Fall-Winter 2021 collection.jpeg') center/cover fixed; /* Replace 'background-image.jpg' with your actual background image */
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow for glass effect */
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #c0c0c0; /* Silver color */
+    font-family: Copperplate, Papyrus, fantasy; /* Change font to Copperplate */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Add text shadow for readability */
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container form {
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container select, .form-container button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    background-color: #003366;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #001e4a;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #003366; /* Dark blue text */
+}
+
+.movie img {
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
