@@ -60,5 +60,6 @@ def recommend_by_genre():
     # Pass a variable to indicate genre recommendations are being displayed
     return render_template('genre_recommendations.html', movies=movies_zipped, display_genre_recommendations=True)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)  # Adjust the port as needed
+
